@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="checklist.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Space+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Todo List</title>
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List </h1>
+    <ol class="list">
+     
+    </ol>
+    <!-- <div class="error-message" id="remove-error-message"></div> -->
+
+    <div class="input-group">
+      <input type="text" class="addItemInput task-input" placeholder="Task to be done">
+      <button class="addItemButton">Add Task <i class="fas fa-plus"></i></button>
+    </div>
+    <div class="error-message" id="error-message"></div>
+    </div>
+
+    <div class="modal" id="not-allowed-modal">
+      <div class="modal-content">
+        <h2>Can't Remove Task</h2>
+        <p>You can't remove a task that has not been marked as done.</p>
+        <button class="close-button">&times;</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

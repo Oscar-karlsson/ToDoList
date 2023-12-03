@@ -1,0 +1,234 @@
+/* General body styles */
+body {
+    font-size: 1.15rem;
+    background: #edeff0;
+    padding: 20px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #384047;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  /* Paragraph styles within container */
+  .container p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* List item styles */
+  li {
+    list-style-type: disc;
+    margin-bottom: 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+    border-bottom: 1px solid #ccc;
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Hover effect for list items */
+  li:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Container styles */
+  .container {
+    width: 450px;
+    box-sizing: border-box;
+    background: white;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+    margin: 60px auto 0;
+  }
+  
+  /* List styles */
+  .list {
+    padding: .5rem;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Input field styles */
+  input {
+    margin-right: 7px;
+    caret-color: blue;
+  }
+  
+  /* Input field focus styles */
+  input:focus {
+    border-color: #336699;
+    box-shadow: 0 0 5px #336699;
+    outline: none;
+  }
+  
+  /* Input group styles */
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Add item input styles */
+  .addItemInput {
+    padding: 1px 1px;
+    margin-right: 7px;
+    height: 1.5em;
+    font-size: 100%;
+    flex-grow: 1;
+    border-radius: 5px;
+  }
+  
+  
+  
+  /* Button styles */
+  button {
+    color: white;
+    background: #508abc;
+    border: solid 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.75em;
+    padding: 0.5em 0.65em;
+    transition: background 0.3s ease;
+  }
+  
+  /* Button active styles */
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Button hover styles */
+  button:hover {
+    background: #407ba9;
+  }
+  
+  /* Spacing between buttons (When more than 1 button beside each other, not in */
+  button + button {
+    margin-left: 1em;
+  }
+  
+  /* Different button color styles (not in use) */
+  p + button {
+    background: #52bab3;
+  }
+  .container button + button {
+    background: #768da3;
+  }
+  .container li button + button {
+    background: #508abc;
+  }
+  
+  /* Last button in list item styles (Trashbin button) */
+  .container li button:last-child {
+    background: none;
+    color: red;
+    
+  }
+  
+  
+  /* Styles for completed tasks */
+  .strike, li.done {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  /* Remove button styles */
+  .removeButton {
+    margin-left: auto;
+    background: none;
+    border: none;
+    transition: 0.6s;
+  }
+  
+  .removeButton:active {
+    transform: scale(1.3);
+  }
+  
+  /* Remove button hover styles */
+  .removeButton:hover {
+    scale: 1.1;
+  }
+  
+  /* Error message styles */
+  .error-message {
+    color: #D8000C;
+    margin: .4rem 0 .5rem 0;
+  }
+  
+  /* Task input styles */
+  .task-input {
+    padding-left: 0.2rem;
+  }
+  
+  /* Task input placeholder styles */
+  .task-input::placeholder {
+    padding-left: .2rem;
+  }
+
+
+
+
+  
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Close button */
+  .close-button {
+    background-color: #ffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
